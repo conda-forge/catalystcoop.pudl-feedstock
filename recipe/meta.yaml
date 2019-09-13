@@ -1,5 +1,5 @@
 {% set name = "catalystcoop.pudl" %}
-{% set version = "0.1.0rc1" %}
+{% set version = "0.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 5afcbf6f0b2084e1342303f6fc82042668aa108c1e183ea3efc0586e14001602
+  sha256: ab6925701b57625b67027fefa00639e12aad476dd7493383af527415a4115289
 
 build:
   noarch: python
