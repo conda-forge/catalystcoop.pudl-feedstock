@@ -1,5 +1,5 @@
 {% set name = "catalystcoop.pudl" %}
-{% set version = "0.1.0" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -29,22 +29,21 @@ requirements:
     - python >=3.7
     - setuptools
     - coloredlogs
-    - datapackage
+    - datapackage >=1.9.0
     - dbfread
     - goodtables
     - matplotlib
     - networkx >=2.2
     - numpy
     - pandas >=0.24
-    - psycopg2
-    - pyyaml
     - pyarrow >=0.14.0
+    - pyyaml
     - python-snappy
     - scikit-learn >=0.20
     - scipy
     - sqlalchemy >=1.3.0
     - tableschema
-    - tableschema-sql
+    - tableschema-sql >=1.1.0
     - timezonefinder
     - xlsxwriter
 
@@ -53,16 +52,17 @@ test:
     - pudl
   commands:
     - pudl_setup
-    - pudl_data --help
-    - ferc1_to_sqlite --help
-    - pudl_etl --help
-    - epacems_to_parquet --help
+    - pudl_data --help > /dev/null
+    - ferc1_to_sqlite --help > /dev/null
+    - pudl_etl --help > /dev/null
+    - datapkg_to_sqlite --help > /dev/null
+    - epacems_to_parquet --help > /dev/null
 
 about:
   home: https://catalyst.coop/pudl
   license: MIT
   license_family: MIT
-  license_file: docs/LICENSE.rst
+  license_file: LICENSE.txt
   summary: 'An open data processing pipeline for public US utility data.'
 
   description: |
