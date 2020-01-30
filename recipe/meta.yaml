@@ -23,28 +23,28 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.7,<3.8.0a0
     - pip
     - setuptools_scm
   run:
-    - python >=3.7
+    - python >=3.7,<3.8.0a0
     - setuptools
     - coloredlogs
-    - datapackage >=1.9.0
+    - datapackage >=1.11.0
     - dbfread
     - goodtables
     - matplotlib
     - networkx >=2.2
     - numpy
-    - pandas >=0.24
-    - pyarrow >=0.14.0
+    - pandas >=0.25,<1.0
+    - pyarrow >=0.15.1
     - pyyaml
     - python-snappy
     - scikit-learn >=0.20
     - scipy
     - sqlalchemy >=1.3.0
-    - tableschema
-    - tableschema-sql >=1.1.0
+    - tableschema >=1.12.3
+    - tableschema-sql >=1.3.1
     - timezonefinder
     - xlsxwriter
 
