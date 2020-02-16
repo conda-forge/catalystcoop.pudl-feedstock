@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . -vv"
   entry_points:
     - pudl_data = pudl.workspace.datastore_cli:main
@@ -33,7 +33,7 @@ requirements:
     - datapackage >=1.11.0
     - dbfread
     - goodtables
-    - matplotlib
+    - matplotlib-base
     - networkx >=2.2
     - numpy
     - pandas >=0.25,<1.0
