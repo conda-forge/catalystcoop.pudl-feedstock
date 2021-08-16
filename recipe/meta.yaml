@@ -1,5 +1,5 @@
 {% set name = "catalystcoop.pudl" %}
-{% set version = "0.3.2" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7b367aa4973678164a9acf902b5137aeadf54df3228fda68b78ff59ccaf080a3
+  sha256: 2f4d5569f838a68bf42e688fb90d53a06d30afa70c62cbad4bf2d8b27daa200c
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - pudl_data = pudl.workspace.datastore_cli:main
     - pudl_setup = pudl.workspace.setup_cli:main
@@ -64,7 +64,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE.txt
-  summary: 'An open data processing pipeline for public US utility data.'
+  summary: An open data processing pipeline for public US utility data.
 
   description: |
     The PUDL (Public Utility Data Liberation) project extracts electric
