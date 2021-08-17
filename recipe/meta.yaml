@@ -40,12 +40,16 @@ requirements:
     - gcsfs ~=0.7.2
     - geopandas ~=0.9.0
     - goodtables-pandas-py ~=0.2.0
+    - google-cloud-bigquery >=1.6.0,<2.0 # prefect google extra
+    - google-cloud-secret-manager >2.4.0 # prefect google extra
+    - google-cloud-storage >=1.13,<2.0   # prefect google extra
+    - graphviz >0.8.3 # prefect viz extra
     - jinja2 ~=2.11
     - matplotlib-base ~=3.0
     - networkx ~=2.2
     - numpy ~=1.20
     - pandas ~=1.2.5
-    - prefect <15.0
+    - prefect ~=0.14.2
     - pyarrow ~=4.0
     - pygeos ~=0.9.0
     - python-snappy ~=0.6.0
