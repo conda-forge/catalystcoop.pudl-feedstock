@@ -72,7 +72,6 @@ test:
     - pudl_datastore --help > /dev/null
     - pudl_etl --help > /dev/null
     - state_demand --help > /dev/null
-    - pudl_etl --clobber settings/etl_fast.yml
 
 about:
   home: https://catalyst.coop/pudl
