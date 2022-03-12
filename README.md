@@ -5,7 +5,7 @@ Home: https://catalyst.coop/pudl
 
 Package license: MIT
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/catalystcoop.pudl-feedstock/blob/master/LICENSE.txt)
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/catalystcoop.pudl-feedstock/blob/main/LICENSE.txt)
 
 Summary: An open data processing pipeline for public US utility data.
 
@@ -26,8 +26,8 @@ Current build status
 
 <table><tr><td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7836&branchName=master">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/catalystcoop.pudl-feedstock?branchName=master">
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7836&branchName=main">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/catalystcoop.pudl-feedstock?branchName=main">
       </a>
     </td>
   </tr>
