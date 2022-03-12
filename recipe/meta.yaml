@@ -1,5 +1,5 @@
 {% set name = "catalystcoop.pudl" %}
-{% set version = "0.5.0" %}
+{% set version = "0.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ae38e0b451369d2de54c4a29bcd7778fdb9745105df2e2f02cec67a5081d4fd4
+  sha256: 10adbac6818f84ca0ee575dbc90f61f09312f38106035f8b1b42fbc680f750ff
 
 build:
   noarch: python
-  number: 3
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - censusdp1tract_to_sqlite = pudl.convert.censusdp1tract_to_sqlite:main
