@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - censusdp1tract_to_sqlite = pudl.convert.censusdp1tract_to_sqlite:main
@@ -53,6 +53,7 @@ requirements:
     - scipy >=1.6,<1.9
     - setuptools >=53,<60
     - sqlalchemy >=1.4,<2
+    - sqlite >=3.36,<4
     - timezonefinder >=5,<6
     - xlsxwriter >=3,<4
 
