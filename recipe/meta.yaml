@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - censusdp1tract_to_sqlite = pudl.convert.censusdp1tract_to_sqlite:main
@@ -32,7 +32,7 @@ requirements:
     - python >=3.10,<3.11
     - addfips >=0.4,<0.5
     - catalystcoop.dbfread >=3.0,<3.1
-    - catalystcoop.ferc-xbrl-extractor==0.6.1
+    - catalystcoop.ferc-xbrl-extractor ==0.6.1
     - coloredlogs >=15.0,<15.1
     - dask >=2021.8,<2022.11.2
     - datapackage >=1.11,<1.16
@@ -52,7 +52,7 @@ requirements:
     - pyyaml >=5,<6.1
     - scikit-learn >=1.0,<1.2
     - scipy >=1.6,<1.10
-    - shapely>1.8.0,!=1.8.3,<2.1
+    - shapely >1.8.0,!=1.8.3,<2.1
     - sqlalchemy >=1.4,<1.4.45
     - sqlite >=3.36,<4
     - timezonefinder >=5,<6.2
