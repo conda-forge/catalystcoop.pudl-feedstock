@@ -17,7 +17,8 @@ build:
     - censusdp1tract_to_sqlite = pudl.convert.censusdp1tract_to_sqlite:main
     - metadata_to_rst = pudl.convert.metadata_to_rst:main
     - epacems_to_parquet = pudl.convert.epacems_to_parquet:main
-    - ferc1_to_sqlite = pudl.convert.ferc1_to_sqlite:main
+    - ferc_to_sqlite = pudl.convert.ferc_to_sqlite:main
+    - datasette_metadata_to_yml = pudl.convert.datasette_metadata_to_yml:main
     - pudl_datastore = pudl.workspace.datastore:main
     - pudl_etl = pudl.cli:main
     - pudl_setup = pudl.workspace.setup_cli:main
@@ -64,10 +65,10 @@ test:
   commands:
     - pudl_setup --clobber
     - censusdp1tract_to_sqlite --help > /dev/null
+    - metadata_to_rst --help > /dev/null
     - epacems_to_parquet --help > /dev/null
     - ferc_to_sqlite --help > /dev/null
-    - metadata_to_rst --help > /dev/null
-    - metadata_to_yml --help > /dev/null
+    - datasette_metadata_to_yml --help > /dev/null
     - pudl_datastore --help > /dev/null
     - pudl_etl --help > /dev/null
     - state_demand --help > /dev/null
