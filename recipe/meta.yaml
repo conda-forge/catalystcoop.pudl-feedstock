@@ -41,7 +41,7 @@ requirements:
     - fsspec >=2021.7,<2022.11.1
     - gcsfs >=2021.7,<2022.11.1
     - geopandas >=0.9,<0.13
-    - h3 >=3.7.6,<3.8
+    - h3-py >=3.7.6,<3.8
     - jinja2 >=2,<3.2
     - matplotlib-base >=3.3,<3.7
     - networkx >=2.2,<2.9
