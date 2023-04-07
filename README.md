@@ -1,11 +1,11 @@
-About catalystcoop.pudl
-=======================
+About catalystcoop.pudl-feedstock
+=================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/catalystcoop.pudl-feedstock/blob/main/LICENSE.txt)
 
 Home: https://catalyst.coop/pudl
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/catalystcoop.pudl-feedstock/blob/main/LICENSE.txt)
 
 Summary: An open data processing pipeline for public US utility data.
 
@@ -154,5 +154,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@bendnorman](https://github.com/bendnorman/)
 * [@zaneselvans](https://github.com/zaneselvans/)
+* [@zschira](https://github.com/zschira/)
 
