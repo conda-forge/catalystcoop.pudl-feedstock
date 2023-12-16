@@ -24,7 +24,7 @@ build:
 
 requirements:
   host:
-    - python >=3.8,<3.11
+    - python >=3.8,<3.12
     - pip
     - setuptools_scm
   run:
@@ -130,3 +130,4 @@ extra:
     - zaneselvans
     - zschira
     - bendnorman
+    - jdangerx
