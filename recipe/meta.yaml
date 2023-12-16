@@ -100,7 +100,7 @@ test:
   imports:
     - pudl
   commands:
-    - pudl_setup --clobber
+    - pudl_setup --help > /dev/null
     - metadata_to_rst --help > /dev/null
     - epacems_to_parquet --help > /dev/null
     - ferc_to_sqlite --help > /dev/null
