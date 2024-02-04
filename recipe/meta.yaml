@@ -15,10 +15,10 @@ build:
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - ferc_to_sqlite = pudl.ferc_to_sqlite.cli:main
-    - metadata_to_rst = pudl.convert.metadata_to_rst:main
+    - metadata_to_rst = pudl.convert.metadata_to_rst:metadata_to_rst
     - pudl_check_fks = pudl.etl.check_foreign_keys:pudl_check_fks
-    - pudl_datastore = pudl.workspace.datastore:main
-    - pudl_etl = pudl.cli.etl:main
+    - pudl_datastore = pudl.workspace.datastore:pudl_datastore
+    - pudl_etl = pudl.cli.etl:pudl_etl
     - pudl_service_territories = pudl.analysis.service_territory:pudl_service_territories
 
 requirements:
