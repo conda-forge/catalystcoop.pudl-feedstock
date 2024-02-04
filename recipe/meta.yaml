@@ -95,6 +95,7 @@ requirements:
     - sphinx-reredirects ==0.1.2
     - sphinxcontrib-bibtex ==2.6.1
     - sqlalchemy ==2.0.25
+    - sqlite ==3.44.2
     - timezonefinder ==6.3.0
     - universal_pathlib ==0.1.4
     - urllib3 ==1.26.18
