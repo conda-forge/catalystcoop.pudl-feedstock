@@ -1,4 +1,5 @@
 {% set name = "catalystcoop.pudl" %}
+{% set pypi_normalized_name = "catalystcoop_pudl" %}
 {% set version = "2024.2.6" %}
 
 package:
@@ -6,7 +7,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ pypi_normalized_name }}/{{ pypi_normalized_name }}-{{ version }}.tar.gz
   sha256: e1c202cd048ab5d4dbd70f70ef7b3b9057d4123d89d5404bec9ec10925d1a363
 
 build:
