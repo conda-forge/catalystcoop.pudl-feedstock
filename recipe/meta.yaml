@@ -91,12 +91,14 @@ requirements:
     - scikit-learn ==1.4.2
     - scipy ==1.13.0
     - Shapely ==2.0.4
+    - splink ==3.9.14
     - sphinx ==7.3.7
     - sphinx-autoapi ==3.0.0
     - sphinx-issues ==1.2.0
     - sphinx-reredirects ==0.1.2
     - sphinxcontrib-bibtex ==2.6.2
     - sqlalchemy ==2.0.30
+    - sqlglot ==23.17.0
     - sqlite ==3.45.3
     - timezonefinder ==6.4.1
     - universal_pathlib ==0.2.2
