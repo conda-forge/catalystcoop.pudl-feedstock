@@ -43,7 +43,7 @@ requirements:
     - coverage ==7.6.4
     - dagster ==1.9.1
     - dagster-postgres ==0.25.1
-    - dask ==2024.11.1
+    - dask ==2024.11.0
     - dask-expr ==1.1.17
     - datasette ==0.65
     - doc8 ==1.1.2
