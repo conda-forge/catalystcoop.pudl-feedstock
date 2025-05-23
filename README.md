@@ -159,6 +159,3 @@ Feedstock Maintainers
 * [@zaneselvans](https://github.com/zaneselvans/)
 * [@zschira](https://github.com/zschira/)
 
-
-<!-- dummy commit to enable rerendering -->
-
