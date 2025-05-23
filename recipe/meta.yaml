@@ -1,6 +1,6 @@
 {% set name = "catalystcoop.pudl" %}
 {% set pypi_normalized_name = "catalystcoop_pudl" %}
-{% set version = "2025.2.0" %}
+{% set version = "2025.5.0" %}
 {% set python_min = "3.12" %}
 
 package:
@@ -9,13 +9,13 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ pypi_normalized_name }}/{{ pypi_normalized_name }}-{{ version }}.tar.gz
-  sha256: a3195c50f5a72ae43bda1731f88dbe2573e40810270ec5b98867c4fabe7003be
-
+  sha256: b6495bf04ed22f51f906d0b5e24da4be44074abe9aceb6c4672c49d73aa9fef7
 build:
   noarch: python
   number: 0
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
+    - dbt_helper = pudl.scripts.dbt_helper:dbt_helper
     - ferc_to_sqlite = pudl.ferc_to_sqlite.cli:main
     - metadata_to_rst = pudl.convert.metadata_to_rst:metadata_to_rst
     - pudl_check_fks = pudl.etl.check_foreign_keys:pudl_check_fks
@@ -115,6 +115,7 @@ test:
   imports:
     - pudl
   commands:
+    - dbt_helper --help > /dev/null
     - ferc_to_sqlite --help > /dev/null
     - metadata_to_rst --help > /dev/null
     - pudl_check_fks --help > /dev/null
@@ -143,5 +144,4 @@ extra:
   recipe-maintainers:
     - zaneselvans
     - zschira
-    - bendnorman
     - jdangerx
