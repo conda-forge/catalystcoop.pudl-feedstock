@@ -41,8 +41,8 @@ requirements:
     - conda-lock ==3.0.2
     - coverage ==7.8.0
     - dagster ==1.10.15
-    - dagster-postgres ==0.26.15
-    - dagster-dbt==0.26.15
+    - dagster-postgres ==1!0.26.15
+    - dagster-dbt==1!0.26.15
     - dask ==2025.5.0
     - dask-expr ==2.0.0
     - datasette ==0.65.1
