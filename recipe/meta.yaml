@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ pypi_normalized_name }}/{{ pypi_normalized_name }}-{{ version }}.tar.gz
-  sha256: b6495bf04ed22f51f906d0b5e24da4be44074abe9aceb6c4672c49d73aa9fef7
+  sha256: 6a1dd33f716c9cfae0505eeea567bd86fb0fa524f15aa6f51023bbaf7f066e05
 build:
   noarch: python
   number: 0
