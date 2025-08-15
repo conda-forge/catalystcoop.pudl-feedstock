@@ -1,7 +1,7 @@
 {% set name = "catalystcoop.pudl" %}
 {% set pypi_normalized_name = "catalystcoop_pudl" %}
 {% set version = "2025.8.0" %}
-{% set python_min = "3.12" %}
+{% set python_min = "3.13" %}
 
 package:
   name: {{ name|lower }}
@@ -30,71 +30,73 @@ requirements:
     - setuptools
     - setuptools_scm
   run:
-    - python >={{ python_min }},<3.13
-    - alembic ==1.16.2
-    - boto3 ==1.38.27
+    - python >={{ python_min }},<3.14
+    - alembic ==1.16.4
+    - boto3 ==1.39.8
     - bottleneck ==1.5.0
     - catalystcoop.dbfread ==3.0.0
     - catalystcoop.ferc_xbrl_extractor ==1.6.0
     - click ==8.1.8
     - coloredlogs ==14.0
-    - conda-lock ==3.0.3
-    - coverage ==7.9.1
-    - dagster ==1.11.0
-    - dagster-dbt ==1!0.27.0
-    - dagster-postgres ==1!0.27.0
-    - dask-core ==2025.5.1
+    - conda-lock ==3.0.4
+    - coverage ==7.10.2
+    - dagster ==1.11.5
+    - dagster-dbt ==1!0.27.5
+    - dagster-postgres ==1!0.27.5
+    - dask-core ==2025.7.0
     - dask-expr ==2.0.0
     - datasette ==0.65.1
-    - dbt-duckdb ==1.9.2
+    - dbt-duckdb ==1.9.4
+    - dbt-core ==1.10.7
     - deepdiff ==7.0.1
     - doc8 ==2.0.0
     - email_validator ==2.2.0
     - frictionless ==5.18.1
-    - fsspec ==2025.5.1
+    - fsspec ==2025.7.0
     - furo ==2024.8.6
-    - gcsfs ==2025.5.1
-    - gdal ==3.11.0
+    - gcsfs ==2025.7.0
+    - gdal ==3.11.3
     - geopandas ==1.1.1
     - grpcio ==1.71.0
     - grpcio-health-checking ==1.71.0
     - grpcio-status ==1.71.0
-    - hypothesis ==6.135.17
+    - hypothesis ==6.137.1
     - jellyfish ==1.1.3
     - jinja2 ==3.1.6
     - jupyter ==1.1.1
-    - matplotlib-base ==3.10.3
-    - mlflow ==3.1.1
+    - matplotlib-base ==3.10.5
+    - mlflow ==3.2.0
     - nbconvert ==7.16.6
     - nbformat ==5.10.4
     - networkx ==3.5
     - numba ==0.61.2
     - numexpr ==2.10.2
     - numpy ==2.2.6
-    - packaging ==24.2
-    - pandas ==2.3.0
-    - pandera-core ==0.23.1
+    - packaging ==25.0
+    - pandas ==2.3.1
+    - pandera-core ==0.25.0
     - pre-commit ==4.2.0
-    - pyarrow ==19.0.1
+    - pyarrow ==20.0.0
     - pydantic ==2.11.7
     - pydantic-settings ==2.10.1
     - pytest ==8.4.1
     - pytest-console-scripts ==1.4.1
     - pytest-cov ==6.2.1
     - pytest-mock ==3.14.1
-    - pytest-xdist ==3.7.0
-    - python-build ==1.2.2.post1
-    - python-calamine ==0.3.2
+    - pytest-order ==1.3.0
+    - pytest-xdist ==3.8.0
+    - python-build ==1.3.0
+    - python-calamine ==0.4.0
     - python-dotenv ==1.1.1
-    - python-duckdb ==1.3.1
+    - python-duckdb ==1.3.2
     - pytz ==2025.2
     - pyyaml ==6.0.2
     - readthedocs-sphinx-ext ==2.2.5
     - requests ==2.32.4
-    - responses ==0.25.7
-    - ruff ==0.12.1
-    - s3fs ==2025.5.1
-    - scikit-learn ==1.7.0
+    - responses ==0.25.8
+    - ruff ==0.12.8
+    - s3fs ==2025.7.0
+    - scikit-learn ==1.7.1
     - scipy ==1.16.0
     - shapely ==2.1.1
     - sphinx ==8.2.3
@@ -104,11 +106,11 @@ requirements:
     - sphinxcontrib-bibtex ==2.6.5
     - sphinxcontrib-googleanalytics ==0.5
     - splink ==4.0.8
-    - sqlalchemy ==2.0.41
-    - sqlglot ==26.30.0
-    - sqlite ==3.50.2
-    - timezonefinder ==6.5.9
-    - typos ==1.33.1
+    - sqlalchemy ==2.0.42
+    - sqlglot ==27.6.0
+    - sqlite ==3.50.4
+    - timezonefinder ==7.0.2
+    - typos ==1.35.3
     - universal_pathlib ==0.2.6
     - urllib3 ==2.5.0
     - xlsxwriter ==3.2.5
