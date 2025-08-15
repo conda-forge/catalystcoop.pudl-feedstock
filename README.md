@@ -155,6 +155,7 @@ Feedstock Maintainers
 =====================
 
 * [@jdangerx](https://github.com/jdangerx/)
+* [@marianneke](https://github.com/marianneke/)
 * [@zaneselvans](https://github.com/zaneselvans/)
 * [@zschira](https://github.com/zschira/)
 
