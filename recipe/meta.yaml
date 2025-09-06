@@ -1,6 +1,6 @@
 {% set name = "catalystcoop.pudl" %}
 {% set pypi_normalized_name = "catalystcoop_pudl" %}
-{% set version = "2025.8.0" %}
+{% set version = "2025.9.0" %}
 {% set python_min = "3.13" %}
 
 package:
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ pypi_normalized_name }}/{{ pypi_normalized_name }}-{{ version }}.tar.gz
-  sha256: 5ba1aa3e5575b9ebe9acb14de38a6bbab741b98da5885541a0c9a7fd793003a1
+  sha256: abf63097b8537eceb962d0214ce3a65a2a54d3a3c4ac7a945ea458ef7a7f4ade
 build:
   noarch: python
   number: 0
